@@ -17,6 +17,7 @@ struct Racer {
 	string teamName;
 	int distance;
 	Driver dName;
+	string country;
 	
 };
 
