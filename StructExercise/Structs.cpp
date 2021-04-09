@@ -1,6 +1,9 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
+#include <time.h>
+#include <chrono>
+#include <thread>
 
 using namespace std;
 
@@ -80,6 +83,9 @@ int main() {
 		cout << "The " << team3.teamName << " driven by " << team3.dName.name << " has driven " << team3.distance << " miles \n";
 		t3_total = t3_total + team3.distance;
 		cout << endl;
+
+		chrono::seconds dura(5);
+		this_thread::sleep_for(dura);
 
 	}
 	
